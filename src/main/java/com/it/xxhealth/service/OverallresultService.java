@@ -1,14 +1,13 @@
 package com.it.xxhealth.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.it.xxhealth.entity.Overallresult;
-import java.util.List;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
- * 总检结论 Service
- */
+* @author Ljz
+* @description 针对表【overallresult(总检结论信息表)】的数据库操作Service
+* @createDate 2026-11-04 09:47:06
+*/
 public interface OverallresultService extends IService<Overallresult> {
 
-    /** 按预约编号查询总检结论 */
-    List<Overallresult> listByOrderId(Integer orderid);
 }

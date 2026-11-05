@@ -1,15 +1,13 @@
 package com.it.xxhealth.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.it.xxhealth.dto.CiReportDto;
 import com.it.xxhealth.entity.Cireport;
-import java.util.List;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
- * 报告检查项 Service
- */
+* @author Ljz
+* @description 针对表【cireport(体检报告检查项信息表)】的数据库操作Service
+* @createDate 2026-11-04 09:47:06
+*/
 public interface CireportService extends IService<Cireport> {
 
-    /** 按预约编号查询检查项列表（含明细） */
-    List<CiReportDto> listByOrderId(Integer orderid);
 }
